@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyaya Login</title>
+    <link rel="icon" href="img/favicon.jpg">
+    <!-- CSS only -->
+
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            font-family: sans-serif;
+        }
+        .hero{
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/bg_img.jpeg);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+          }
+          .form-box{
+            width: 380px;
+            height: 480px;
+            position: relative;
+            margin: 6% auto;
+            background: #fff;
+            padding: 5px;
+          }
+          .button-box{
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            border-radius: 30px;
+          }
+          .button-box h1{
+            text-align: center;
+            cursor: pointer;
+          }
+          
+          
+          .input-group{
+            top: 140px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+          }
+          .input-field{
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px  0;
+            border-left: 0;
+            border-right: 0;
+            border-top:0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+          }
+          .submit-btn{
+            width:85% ;
+            padding: 10px 30px;
+            display: block;
+            margin: 50px auto;
+            background: linear-gradient(to right , #ff105f,#ffad06);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+            cursor: pointer;
+          }
+          span{
+            color: #777;
+            font-size: 12px;
+            position: absolute;
+            bottom: 68px;
+          }
+          #register{
+            left: 50px;
+          }
+          .type{
+            margin-left: 40px;
+          
+          }
+          .type input{
+            margin-left:15px;
+            margin-right: 10px;
+          }
+          
+    </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <h1>Register</h1>
+        </div>
+        <form class="input-group" id="register" action="registration.php" method="post">
+            <div class="type">
+                <input type="radio" name="user_type" id="User" value="User">User
+                <input type="radio" name="user_type" id="Advocate" value="Advocate">Advocate
+            </div>
+            <input type="text" class="input-field" name="username" placeholder="Username" required/>
+            <input type="number" class="input-field" name="mobile" placeholder="Mobile" required/>
+            <input type="email" class="input-field" name="email" placeholder="Email" required/>
+            <input type="password" class="input-field" name="password" placeholder="Enter Password" required/>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
